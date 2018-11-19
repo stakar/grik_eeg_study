@@ -2,7 +2,7 @@
 
 Code for study of CMC using EEG
 
-#Technolody
+##Technolody
 Simple DirectMedia Layer
 C
 Python
