@@ -1,1 +1,8 @@
-#grik_eeg_study \n Code for study of CMC using EEG
+#grik_eeg_study 
+
+Code for study of CMC using EEG
+
+#Technolody
+Simple DirectMedia Layer
+C
+Python
