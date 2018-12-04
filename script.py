@@ -1,9 +1,10 @@
 '''
-The following example was tested with OpenBCI Ganglion board.
+THis is script for EEG study prepared for GRIK. THe following code is taken from
+pyseeg package.
 '''
 
 from pyseeg.communication import record_data
-from pyseeg.stimuli import SimpleRectangle
+from script_stimuli import SimpleRectangle
 
 # 0. Define output path (default is in your home directory).
 output_path = '/tmp/pyseeg_test_output.csv'
