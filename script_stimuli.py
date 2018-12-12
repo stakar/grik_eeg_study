@@ -1,8 +1,10 @@
+import pygame
+from random import shuffle
 
 class SimpleRectangle(object):
 
-        def __init__(self, freqs, win_size=(1000, 1000), position=(300, 300),
-                     stim_size=(400, 400), colors=((255, 255, 255), (0, 0, 0)),
+        def __init__(self, freqs, win_size=(800, 800), position=(0, 0),
+                     stim_size=(800, 800), colors=((255, 255, 255), (0, 0, 0)),
                      image=('1','2','3','4')):
 
             self.freqs = freqs
@@ -30,10 +32,10 @@ class SimpleRectangle(object):
             self.clock = pygame.time.Clock()
             pygame.init()
             state=StateSimulator()
-            bod1 = pygame.image.load('bod_1.png')
-            bod2 = pygame.image.load('bod_2.png')
-            bod3 = pygame.image.load('bod_3.png')
-            cont = pygame.image.load('control.png')
+            bod1 = pygame.image.load('bod1.jpg')
+            bod2 = pygame.image.load('bod2.jpg')
+            bod3 = pygame.image.load('bod3.jpg')
+            cont = pygame.image.load('control.jpg')
             list_of_stim = [bod1,bod2,bod3,cont]*5
             vocab = {bod1:1,bod2:2,bod3:3,cont:4}
             shuffle(list_of_stim)
@@ -52,7 +54,8 @@ class SimpleRectangle(object):
                         pygame.quit()
 
 class StateSimulator(object):
-        def __init__(self):
-            self.value=0
-    projekt=SimpleRectangle([10,15])
-    projekt.start_display()
+    def __init__(self):
+        self.value=0
+
+projekt=SimpleRectangle([10,15])
+projekt.start_display()
